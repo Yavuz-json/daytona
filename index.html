@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daytona</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar" id="nav" onclick="resize()">
+        <a id="azalt" style="float: left;">Back</a>
+        <a style="display: none;" onclick="resize()" style="float: left;">Menu<i id="arrowid" class="fa fa-angle-down"></i></a>
+        <a id="arttir" style="float: right;">Next</a>
+        <p id="tarih"></p>
+    </div>
+    <textarea onclick="document.getElementById('nav').style.height = '50px'; key = false;" name="" id="metin" placeholder="Type Here"></textarea>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+<!--
+ Veri ekleme
+localStorage.setItem("isim", "Ahmet");
+
+ Veri okuma
+let isim = localStorage.getItem("isim");
+
+console.log(isim);
+
+ Veri silme
+localStorage.removeItem("yas");
+
+ Tüm verileri temizleme
+localStorage.clear();
