@@ -24,16 +24,18 @@
 
 </html>
 <!--
- Veri ekleme
-localStorage.setItem("isim", "Ahmet");
+LOCAL STORAFE GUIDE
 
- Veri okuma
-let isim = localStorage.getItem("isim");
+push data
+localStorage.setItem("name", "joe");
+
+read data
+let isim = localStorage.getItem("name");
 
 console.log(isim);
 
- Veri silme
-localStorage.removeItem("yas");
+delete
+localStorage.removeItem("name");
 
- Tüm verileri temizleme
+reset all
 localStorage.clear();
